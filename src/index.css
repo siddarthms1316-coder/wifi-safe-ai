@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Lora', 'EB Garamond', Georgia, 'Times New Roman', serif;
+    --font-display: 'Playfair Display', 'Cinzel', Georgia, serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    background-color: #d4d8de;
+    color: #18181b;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .classic-title {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Classic Architectural Grey Palette */
+.theme-classic {
+  --bg-main: #d4d8de;
+  --bg-card: #e4e7ec;
+  --bg-subtle: #cbd1d8;
+  --border-card: #9ca3af;
+  --border-subtle: #b4bac2;
+  --text-primary: #09090b;
+  --text-muted: #3f3f46;
+  --accent-grey-dark: #18181b;
+  --accent-grey-light: #f4f4f5;
+}
+
+/* Custom scrollbars in architectural grey */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cbd1d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Wi-Safe AI",
+  "description": "Privacy-preserving wireless human activity recognition, fall detection, and RF Channel State Information (CSI) safety intelligence platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
